@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import PostService from "../API/PostService"
 
 const ArticlesPage = () => {
+    const [posts,setPosts]=useState([])
+
+    const getPosts = async () => {
+        setPosts(await PostService.getAll())
+    }
+
+    useEffect(()=>{
+        getPosts()
+    },[])
+
+
     return (
-        <div>ArticlesPage</div>
+        <div>
+            {posts ? posts.map(post=>post.title) : "Load"}
+        </div>
     )
 }
 
