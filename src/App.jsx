@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router'
+import { Routes,Route } from 'react-router'
 import Layout from './components/Layout'
 import AboutPage from './pages/AboutPage'
 import ArticlesPage from './pages/ArticlesPage'
