@@ -1,58 +1,126 @@
-
-body{
-    background:#383838;
-    padding: 0;
-    margin: 0;
-    padding: 0 10%;
+body {
+	background: #383838;
+	padding: 0;
+	margin: 0;
+	padding: 0 10%;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
 }
 
-.logo{
-    width: 115px;
-    height: 80px;
+.logo {
+	width: 115px;
+	height: 80px;
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .nav__link {
-    color:#FFFFFF;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 16px;
-    margin: 0 10px;
-    text-decoration: none;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 16px;
+	margin: 0 10px;
+	text-decoration: none;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container__posts {
+	height: 350px;
+	width: 50%;
+	overflow: auto;
+}
+
+.container__post {
+	display: flex;
+	align-items: center;
+
+	border: 2px solid #ffffff;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 10px;
+
+	padding: 10px;
+	margin: 10px;
+}
+
+.circle {
+	width: 25px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 5px;
+
+	background: #ffe100;
+	border-radius: 100%;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+
+	margin-right: 10px;
+	color: #323232;
+}
+
+.name__article {
+	width: 100%;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+
+	color: #efefef;
+}
+
+.button__delete {
+	width: 64px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: #ff1414;
+	border: none;
+	cursor: pointer;
+	border-radius: 20px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 14px;
+
+	margin-left: 10px;
+	padding: 5px;
+
+	color: #ffffff;
 }
 
 footer div {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 2px solid white;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 2px solid white;
 }
 
 .text__footer {
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 14px;
-    color:#FFFFFF
+	text-align: center;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 14px;
+	color: #ffffff;
 }
