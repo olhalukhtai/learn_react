@@ -1,0 +1,5 @@
+.inp {
+	display: flex;
+	flex-direction: row;
+	margin-right: 10px;
+}
