@@ -9,13 +9,18 @@
 <body>
     <script>
         // [], {}
-        /*
+        
         const user1 = {id:1,name:'pasha'} //123
-        const user2 = {id:1,name:'pasha'}
+        const user2=user1//!! не корректно , не изменится
+        ////корректно менять содержимое , тогда ссылки разные const user2 = {id:1,name:'pasha'}
+        user2.age=22
+        console.log(user1)
+        console.log(user2)
+       
 
-        console.log(user1 == user2)
-        console.log(user1.id == user2.id)
-        */
+        //console.log(user1 == user2)
+        //console.log(user1.id == user2.id)
+        
 
         /*
         const numbers = [4,8,2,3,7,9,5,6,3,1,6,7]
@@ -30,6 +35,49 @@
 
         console.log(test)
         */
+/*
+let text1 = "ab";
+let text2 = "cd";
+let result = text1.localeCompare(text2);
+console.log(result)//-1
+*/
+
+/*
+let text1 = "cd";
+let text2 = "ab";
+let result = text1.localeCompare(text2);
+console.log(result)//1
+*/
+/*
+let olya = "olya";
+let yana = "yana";
+let result = olya.localeCompare(yana);
+console.log(result)//-1//не меняется местами//оля раньше яны
+result=yana.localeCompare(olya)
+console.log(result)//1//меняется//яна не раньше оли по алфавите
+*/
+/*
+    const numbers = [1,2,15,8,6,21]
+    const names = ['Pasha','Andrey','Egor','Bogdan']
+    const users = [
+        {name:'Pasha',age:23},
+        {name:'Andrey',age:17},
+        {name:'Bogdan',age:21},
+    ]
+    numbers.sort((num1,num2)=>num1-num2)
+    names.sort()
+    users.sort((user1,user2)=>user1.name.localeCompare(user2.name))
+
+    console.log(numbers)
+    console.log(names)
+    console.log(users)
+*/
+let a=1
+let b=2
+let c=1
+a==b? console.log("a is b") : (a!==c? console.log("a=c") : console.log("a is not b"))
+
     </script>
 </body>
 </html>
+

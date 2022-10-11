@@ -3,3 +3,7 @@
 	flex-direction: row;
 	margin-right: 10px;
 }
+
+.red__inp {
+	background-color: red;
+}

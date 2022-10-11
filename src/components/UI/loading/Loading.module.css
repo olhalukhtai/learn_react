@@ -1,0 +1,46 @@
+.waiting {
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	border: 4px dashed greenyellow;
+	animation: loading 4s infinite linear;
+	position: absolute;
+}
+
+.waiting__relative {
+	position: relative;
+	z-index: 1;
+}
+
+.text {
+}
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+	10% {
+		background-color: green;
+	}
+
+	50% {
+		background-color: pink;
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text {
+	animation: text;
+	position: absolute;
+	z-index: 2;
+}
+
+@keyframes text {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}

@@ -1,0 +1,32 @@
+.background__popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.658);
+	z-index: 1;
+	display: none;
+}
+
+.active {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.block__error {
+	padding: 25px;
+	background-color: white;
+	border-radius: 20px;
+	z-index: 2;
+	position: relative;
+}
+
+.closer {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
