@@ -40,6 +40,10 @@ const ArticlesPage = () => {
 			totalPages: Math.ceil(totalPagesResult / settingsPagination.limit),
 		});
 	});
+	//console.log(req);
+	//console.log(loading);
+	//console.log(error);
+	//console.log(setError);
 
 	const totalPages = useMemo(() => {
 		const buttons = [];
@@ -64,6 +68,7 @@ const ArticlesPage = () => {
 		setPosts(newArr);
 	};
 
+	console.log(posts);
 	return (
 		<>
 			<MyFilter filter={filter} setFilter={setFilter} />
